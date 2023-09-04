@@ -1,0 +1,384 @@
+.footer {
+    background: var(--gray-900, #1E212C);
+    min-height: 566px;
+
+    .footer__inner {
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .footer__inner--item {
+            max-width: 495px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .footer__item--headline {
+                display: flex;
+                flex-direction: row;
+                gap: 60px;
+
+                .footer__headline--sociallinks {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+
+                    a {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+
+            .footer__item--desc {
+                opacity: 0.6;
+                color: var(--white, #FFF);
+                max-width: 493px;
+                /* small/regular */
+                font-family: Ubuntu;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                /* 21px */
+            }
+
+            .footer__item--subtitle {
+                color: var(--white, #FFF);
+
+                /* h4 */
+                font-family: Ubuntu;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+                /* 36px */
+            }
+
+            .footer__form {
+                display: flex;
+                flex-direction: row;
+                margin-top: 3px;
+                gap: 3px;
+
+                .footer__input {
+                    color: var(--white, #FFF);
+                    opacity: 0.6;
+                    height: 44px;
+                    max-width: 359px;
+                    width: 100%;
+                    /* small/regular */
+                    font-family: Ubuntu;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    /* 21px */
+                    border-radius: 4px;
+                    border: 1px solid rgba(255, 255, 255, 0.20);
+                    background: rgba(255, 255, 255, 0.12);
+
+                    padding-left: 16px;
+
+                }
+
+                .footer__button {
+                    display: flex;
+                    width: 131px;
+                    padding-left: 10px;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    height: 44px;
+                    border-radius: 0px 4px 4px 0px;
+                    background: var(--primary, #FF5A30);
+                    color: var(--white, #FFF);
+                    text-align: center;
+                    font-family: Ubuntu;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 44px;
+                    /* 314.286% */
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .footer__item--text {
+                color: var(--white, #FFF);
+                margin-top: 16px;
+                /* extrasmall/regular */
+                font-family: Ubuntu;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                /* 18px */
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .footer__nav {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 125px;
+
+        .footer__nav--item {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+
+            /* Стилизация кнопки меню */
+            .menu-button {
+                display: none;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+
+
+            }
+
+
+
+            .nav__item--headline {
+                color: var(--white, #FFF);
+
+                /* h6 */
+                font-family: Ubuntu;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+                /* 24px */
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            .nav__contacts--adress {
+                display: flex;
+                flex-direction: row;
+                gap: 3px;
+                margin-bottom: 4px;
+
+
+                .contacts__adress--name {
+                    color: var(--white, #FFF);
+
+                    /* base/regular */
+                    font-family: Ubuntu;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%;
+                    /* 25.6px */
+                }
+
+                .contacts__adress--item {
+                    color: var(--white, #FFF);
+
+                    /* base/regular */
+                    font-family: Ubuntu;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%;
+                    /* 25.6px */
+                    opacity: 0.6;
+                }
+
+            }
+        }
+
+        .footer__menu--link {
+            color: var(--white, #FFF);
+            margin-bottom: 5px;
+            /* base/regular */
+            font-family: Ubuntu;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            /* 25.6px */
+        }
+    }
+
+    .footer__rights {
+        margin-top: 54px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .footer__rights--info {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+
+            .footer__rights--text {
+                color: var(--white, #FFF);
+
+                /* extrasmall/regular */
+                font-family: Ubuntu;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                /* 18px */
+            }
+        }
+
+        .footer__rights--button {
+            margin-top: -19px;
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: baseline;
+
+            .rights__button--text {
+                color: var(--white, #FFF);
+
+                /* small/regular */
+                font-family: Ubuntu;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                /* 21px */
+            }
+
+            .rights__button--button {
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+                background: var(--primary, #FF5A30);
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 880px) {
+    .footer .footer__inner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer .footer__nav {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .footer .footer__nav {
+        flex-wrap: wrap;
+    }
+
+    .footer .footer__inner .footer__inner--item .footer__item--headline {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+
+    .footer .footer__inner .footer__inner--item .footer__item--headline .footer__headline--sociallinks {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .footer .footer__inner .footer__inner--item .footer__item--headline {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer .footer__inner .footer__inner--item {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .footer__inner .footer__inner--item .footer__item--headline .footer__headline--sociallinks {
+        gap: 16px;
+    }
+
+    .footer .footer__nav {
+        flex-direction: column;
+    }
+
+
+
+    .footer .footer__nav .footer__nav--item2 .menu-button {
+
+        display: block;
+        background: var(--primary, #FF5A30);
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .footer .footer__nav .footer__nav--item2 {
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+
+    .footer .footer__nav .footer__nav--item2 .nav__item--menu {
+        display: none;
+    }
+
+
+
+    .footer .footer__nav .footer__nav--item2 .nav__item--menu {
+        &.active {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: #FF5A30;
+            z-index: 1;
+        }
+
+
+    }
+
+    .footer .footer__rights {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer .footer__nav .footer__nav--item .nav__contacts--adress .contacts__adress--item {
+        font-size: 12px;
+    }
+
+    .footer .footer__nav .footer__nav--item .nav__contacts--adress {
+        align-items: baseline;
+    }
+
+}
+
+
+
+@media screen and (max-width: 300px) {
+    .footer .footer__inner .footer__inner--item {
+        max-width: 200px;
+    }
+
+    .footer .footer__inner .footer__inner--item .footer__item--headline {
+        flex-direction: column;
+    }
+}

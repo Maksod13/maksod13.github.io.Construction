@@ -1,0 +1,321 @@
+.header__inner {
+    display: flex;
+    margin-top: 23px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .header__burger {
+        z-index: 12;
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px 4px 4px 4px;
+        background: var(--primary, #FF5A30);
+        border: none;
+        outline: none;
+
+        span {
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            background-color: #1E212C;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 3px;
+                background-color: #1E212C;
+                left: 0;
+            }
+
+            &::before {
+                top: -8px;
+            }
+
+            &::after {
+                top: 8px;
+            }
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+    .header__burger--menu {
+        display: flex;
+        flex-direction: row;
+        gap: 174px;
+        align-items: center;
+
+
+    }
+
+    .nav__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-left: -113px;
+
+        .nav__menu--item a {
+            color: var(--gray-800, #424551);
+
+            /* base/bold */
+            font-family: Ubuntu;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%;
+            position: relative;
+
+            /* 25.6px */
+            &:hover::after {
+                content: "";
+                width: 100%;
+                background-color: #1E212C;
+                height: 3px;
+                left: 0;
+                position: absolute;
+                bottom: -10px;
+            }
+        }
+    }
+
+    .header__inner--contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+
+        .contacts__mobile {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+
+            .mobile__info--text {
+                color: var(--gray-800, #424551);
+
+                /* small/bold */
+                font-family: Ubuntu;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+                /* 21px */
+            }
+
+            .mail__info--text {
+                color: var(--gray-800, #424551);
+
+                /* small/bold */
+                font-family: Ubuntu;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+                /* 21px */
+            }
+
+            .mobile__svg {
+                padding-top: 3px;
+            }
+
+
+
+            .mobile__info--nubmer a {
+                color: var(--gray-900, #1E212C);
+
+                /* large/regular */
+                font-family: Ubuntu;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                /* 27px */
+            }
+        }
+
+        .contacts__mail {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+
+            .mail__svg {
+                padding-top: 3px;
+            }
+
+            .mail__info--mail {
+                color: var(--gray-900, #1E212C);
+
+                /* large/regular */
+                font-family: Ubuntu;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                /* 27px */
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header__inner .header__burger--menu {
+        gap: 0;
+    }
+
+    .header__inner .nav__menu {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header__inner {
+        margin-top: 0;
+        margin-bottom: 5px;
+
+        .header__inner--logo {
+            margin-top: 10px;
+        }
+    }
+
+    .header__inner .header__burger {
+        display: block;
+
+        &.open {
+            span {
+                background-color: transparent;
+
+                &::before {
+                    transform: rotate(45deg);
+                    background-color: #1E212C;
+                    top: 0;
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                    background-color: #1E212C;
+                    top: 0;
+                }
+            }
+        }
+
+
+
+    }
+
+    .header__inner .header__burger--menu {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        top: 0;
+        right: 0;
+        width: 350px;
+        height: 500px;
+        background: var(--gray-900, #1E212C);
+        z-index: 10;
+        padding: 70px;
+        visibility: hidden;
+
+        &.open {
+            right: 0;
+            visibility: visible;
+
+        }
+
+    }
+
+    .header__inner .nav__menu {
+        display: block;
+        text-align: center;
+
+    }
+
+    .header__inner .nav__menu .nav__menu--item a {
+        color: var(--white, #FFF);
+        /* h6 */
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        /* 24px */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .header__inner .nav__menu .nav__menu--item {
+        margin-bottom: 20px;
+    }
+
+    .header__inner .header__inner--contacts {
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+
+    .header__inner .header__inner--contacts .contacts__mobile .mobile__info--text {
+        color: var(--white, #FFF);
+
+        /* h6 */
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        /* 24px */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .header__inner .header__inner--contacts .contacts__mobile .mobile__info--nubmer a {
+        color: var(--white, #FFF);
+    }
+
+    .mail__info--text {
+        color: var(--white, #FFF);
+
+        /* h6 */
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        /* 24px */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .mail__info--mail a {
+        color: var(--white, #FFF);
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .header__inner .header__burger--menu.open {
+        height: 440px;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .header__inner .header__burger--menu.open {
+        width: 100%;
+    }
+}
