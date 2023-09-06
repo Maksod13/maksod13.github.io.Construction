@@ -1,9 +1,9 @@
 .header__inner {
     display: flex;
-    margin-top: 23px;
+    padding-top: 23px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 
     .header__burger {
         z-index: 12;
@@ -193,6 +193,7 @@
 
     .header__inner .header__burger {
         display: block;
+        z-index: 700;
 
         &.open {
             span {
@@ -217,9 +218,10 @@
     }
 
     .header__inner .header__burger--menu {
-
         position: absolute;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 20px;
         top: 0;
@@ -227,7 +229,7 @@
         width: 350px;
         height: 500px;
         background: var(--gray-900, #1E212C);
-        z-index: 10;
+        z-index: 600;
         padding: 70px;
         visibility: hidden;
 

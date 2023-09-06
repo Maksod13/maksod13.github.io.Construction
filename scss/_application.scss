@@ -1,7 +1,5 @@
 .application {
     margin-top: 120px;
-    margin: 0 auto;
-    padding: 0 10px;
 
 
     .application__container {
@@ -142,6 +140,12 @@
 }
 
 @media screen and (max-width: 1650px) {
+    .application {
+
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
     .application .application__container .application__request {
         left: 900px;
     }
