@@ -109,4 +109,25 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
+const offerButtons = document.querySelectorAll('.btn__offer');
+const offerinfos = document.querySelectorAll('.offer__info--subtitle');
+        // Добавляем слушатель события для каждой кнопки
+       offerButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                // Скрываем все меню
+                offerinfos.forEach((menu, menuIndex) => {
+                    if (menuIndex !== index) {
+                        menu.classList.remove('active');
+                    }
+                });
 
+                // Отображаем или скрываем меню для текущей кнопки
+                offerinfos[index].classList.toggle('active');
+            });
+       });
+        
+
+       $('.cottage__slider').slick({
+    arrows: true,
+    dots: true,
+  });
