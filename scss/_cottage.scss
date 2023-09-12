@@ -1,8 +1,8 @@
-.interior3 {
+.interior.interior6 {
     background: none;
 }
 
-.interior .interior__container .interior__inner .interior__inner--element .interior__inner--headline .interior__headline--title {
+.interior.interior6 .interior__container .interior__inner .interior__inner--element .interior__inner--headline .interior__headline--title {
     color: var(--gray-900, #1E212C);
 
     /* display/2 */
@@ -15,7 +15,7 @@
     letter-spacing: 1px;
 }
 
-.interior3 .interior__bgimg {
+.interior.interior6 .interior__bgimg {
     opacity: 0.9;
     top: -40px;
 }

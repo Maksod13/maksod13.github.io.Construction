@@ -185,17 +185,19 @@
 }
 
 .partners.partners2 {
-    margin-top: 100px;
-    min-height: 570px;
+    margin-top: 110px;
+    min-height: 560px;
+    height: auto;
 
 }
 
 .partners.partners2 .partners__inner .clients__headline--title {
-    margin-top: 35px;
+    padding-top: 70px;
+    margin-top: 0;
 }
 
 .partners.partners2 .partners__inner .partners__clients--photo {
-    top: 18%;
+    top: 15%;
     z-index: 10;
 }
 
