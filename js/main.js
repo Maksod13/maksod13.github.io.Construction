@@ -130,4 +130,52 @@ const offerinfos = document.querySelectorAll('.offer__info--subtitle');
        $('.cottage__slider').slick({
     arrows: true,
     dots: true,
+       });
+  
+$(document).ready(function() {
+  $('.history__slider').slick({
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
   });
+
+  const slider = $('.history__slider');
+  const monthItems = $('.history__item--name ');
+
+  slider.on('afterChange', function(event, slick, currentSlide) {
+    monthItems.removeClass('active');
+    monthItems.eq(currentSlide).addClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const subscribeButton = document.getElementById('subscribeButton');
+  const closeButton = document.querySelector('.cross__btn');
+  const formContainer = document.getElementById('subscribeFormContainer');
+
+  subscribeButton.addEventListener('click', function() {
+    formContainer.style.display = 'block';
+  });
+
+  closeButton.addEventListener('click', function() {
+    formContainer.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const sendCVButton = document.getElementById('sendCVButton');
+  const closeButton = document.querySelector('#cvFormContainer .cross__btn');
+  const cvFormContainer = document.getElementById('cvFormContainer');
+
+  sendCVButton.addEventListener('click', function() {
+    cvFormContainer.style.display = 'block';
+  });
+
+  closeButton.addEventListener('click', function() {
+    cvFormContainer.style.display = 'none';
+  });
+});
+
+
+
+
+
