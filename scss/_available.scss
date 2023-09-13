@@ -403,6 +403,8 @@
     margin-bottom: 180px;
 }
 
+
+
 @media screen and (max-width: 900px) {
     .apply .aplly__container {
         flex-wrap: wrap;
@@ -459,16 +461,17 @@
     .apply .apply__look #cvFormContainer {
         width: 100%;
         height: auto;
-        padding-top: 200px;
+        padding-top: 50px;
 
     }
 
     .apply .apply__look #cvFormContainer .cross__btn {
-        margin-left: 350px;
+        margin-left: 280px;
+
     }
 
     .apply .apply__look #subscribeFormContainer .cross__btn {
-        margin-left: 350px;
+        margin-left: 280px;
     }
 
     .interior.interior5 {
