@@ -688,6 +688,36 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .interior .interior__container .interior__inner .interior__inner--element {
+        width: 100%;
+    }
+
+    .about__values {
+        margin-top: 20px;
+    }
+
+    .values.values2 .values__inner {
+        padding-top: 0;
+    }
+
+    .history .history__container--slider .history__slider {
+        height: auto;
+    }
+
+    .clients3 .clients2__headline {
+        padding-top: 50px;
+    }
+
+    .team .team__headline {
+        margin-top: 30px;
+    }
+
+    .world {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 376px) {
     .interior.interior4 .interior__container .interior__inner .interior__inner--element .interior__inner--headline .interior__headline--title {
         font-size: 55px;

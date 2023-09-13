@@ -431,9 +431,13 @@
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .interior.interior5 .interior__container .interior__inner .interior__inner--element .interior__inner--headline .interior__headline--title {
         font-size: 35px;
+    }
+
+    .values.values4 {
+        margin-top: 100px;
     }
 
     .interior.interior5 .interior__bgimg {

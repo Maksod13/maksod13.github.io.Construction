@@ -194,7 +194,7 @@
 
     .header__inner .header__burger {
         display: block;
-        z-index: 700;
+        z-index: 1100;
 
         &.open {
             span {
@@ -237,6 +237,7 @@
         &.open {
             right: 0;
             visibility: visible;
+            z-index: 1000;
 
         }
 
