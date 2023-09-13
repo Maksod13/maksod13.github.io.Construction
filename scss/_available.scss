@@ -403,7 +403,11 @@
     margin-bottom: 180px;
 }
 
-
+@media screen and (max-width: 1800px) {
+    .apply .apply__look #cvFormContainer {
+        padding-top: 80px;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .apply .aplly__container {
