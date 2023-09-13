@@ -438,6 +438,12 @@
 
     .values.values4 {
         margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    .apply .aplly__container .apply__container--column .apply__item .apply__button {
+        width: 100px;
+        font-size: 10px;
     }
 
     .interior.interior5 .interior__bgimg {
@@ -448,6 +454,21 @@
         }
 
 
+    }
+
+    .apply .apply__look #cvFormContainer {
+        width: 100%;
+        height: auto;
+        padding-top: 200px;
+
+    }
+
+    .apply .apply__look #cvFormContainer .cross__btn {
+        margin-left: 350px;
+    }
+
+    .apply .apply__look #subscribeFormContainer .cross__btn {
+        margin-left: 350px;
     }
 
     .interior.interior5 {
@@ -463,10 +484,6 @@
         margin-top: 100px;
     }
 
-    .apply .apply__look {
-        width: 100%;
-        text-align: center;
-    }
 
     .apply .apply__look #sendCVButton {
         margin-left: 0;
