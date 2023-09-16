@@ -1,15 +1,30 @@
 .interior.homenews {
     background: var(--gray-200, #F4F5F6);
 
+    .interior__bgimg {
+        background: linear-gradient(90deg, #F4F5F6 0%, rgba(244, 245, 246, 0.00) 41.15%);
+        display: inline-block;
+    }
+
+    .interior__bgimg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #F4F5F6 0%, rgba(244, 245, 246, 0.86) 11.48%, rgba(244, 245, 246, 0.00) 41.15%);
+        z-index: 1;
+        /* Устанавливаем z-index больше, чем у изображения, чтобы градиент был сверху */
+    }
+
+
 }
 
 .interior .interior__container .interior__inner .interior__inner--element .interior__inner--headline .interior__headline--subtitle {
     z-index: 80;
 }
 
-.interior.homenews .interior__bgimg {
-    background: linear-gradient(90deg, #F4F5F6 0%, rgba(244, 245, 246, 0.86) 11.48%, rgba(244, 245, 246, 0.00) 41.15%);
-}
 
 .header__inner .header__burger--menu {
     z-index: 100;

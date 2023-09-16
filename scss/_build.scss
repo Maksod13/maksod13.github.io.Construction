@@ -247,6 +247,11 @@
                 /* 25.6px */
             }
 
+            .build__social--link {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+            }
         }
     }
 }
@@ -354,6 +359,7 @@
 
 .leave {
     margin-top: 115px;
+    margin-bottom: 130px;
 
     .leave__inner {
         max-width: 810px;
@@ -503,6 +509,30 @@
         gap: 0;
 
     }
+
+    .leave .leave__inner .leave__inner--form .input__leave {
+        width: 100%;
+    }
+
+    .leave .leave__inner .leave__inner--form {
+        width: 100%;
+    }
+
+    .leave .leave__inner .leave__inner--form .input__leave label {
+        width: 100%;
+    }
+
+    .leave .leave__inner .leave__inner--form .input__leave input {
+        width: 100%;
+    }
+
+    .leave .leave__inner .leave__inner--form .text__label {
+        width: 100%;
+    }
+
+    .leave .leave__inner .leave__inner--form textarea {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -511,7 +541,15 @@
     }
 
     .buildnews .build__subtitle .news__info--social {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .buildnews .build__subtitle .news__info--social .news__social--comment {
         gap: 0;
     }
 
@@ -520,19 +558,39 @@
     }
 
     .leave .leave__inner .leave__inner--form .input__leave {
-        flex-wrap: wrap;
-        gap: 0;
+        width: 100%;
+    }
+
+    .leave .leave__inner .leave__inner--form {
+        width: 100%;
+    }
+
+    .leave .leave__inner .leave__inner--form .input__leave label {
+        width: 100%;
     }
 
     .leave .leave__inner .leave__inner--form .input__leave input {
-        width: 300px;
+        width: 100%;
+    }
+
+    .leave .leave__inner .leave__inner--form .text__label {
+        width: 100%;
     }
 
     .leave .leave__inner .leave__inner--form textarea {
-        width: 300px;
+        width: 100%;
     }
 
     .comments__news .comments__inner .comments__inner--item {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .buildnews .build__subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
     }
 }

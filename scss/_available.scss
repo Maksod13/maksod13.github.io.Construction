@@ -1,3 +1,15 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Здесь задается прозрачный затемненный фон */
+    z-index: 999;
+}
+
 .interior.interior5 {
     .interior__bgimg {
         top: 0;
@@ -308,7 +320,7 @@
             border: 1px solid var(--gray-300, #E5E8ED);
             background: var(--white, #FFF);
             padding: 48px;
-            padding-top: 24px;
+            padding-top: 34px;
             /* shadow/large */
             position: fixed;
             top: 49%;
@@ -460,6 +472,12 @@
         }
 
 
+    }
+.apply .apply__look{
+    text-align: center;
+}
+    .apply .apply__look #subscribeFormContainer {
+        width: 100%;
     }
 
     .apply .apply__look #cvFormContainer {

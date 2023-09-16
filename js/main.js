@@ -174,6 +174,31 @@ document.addEventListener('DOMContentLoaded', function() {
     cvFormContainer.style.display = 'none';
   });
 });
+// Получаем кнопку "Send CV", затемненный фон и кнопку для закрытия формы
+const sendCVButton = document.getElementById("sendCVButton");
+const subscribeButton = document.getElementById("subscribeButton");
+const overlay = document.querySelector(".overlay");
+const closeButton = document.querySelector(".cross__btn");
+
+
+// Обработчик события для открытия затемненного фона при нажатии на кнопку "Send CV"
+sendCVButton.addEventListener("click", function() {
+  overlay.style.display = "block";
+  
+});
+subscribeButton.addEventListener("click", function () {
+  overlay.style.display = "block";
+})
+
+// Обработчик события для закрытия затемненного фона при нажатии на крестик
+closeButton.addEventListener("click", function() {
+  overlay.style.display = "none";
+});
+
+// Обработчик события для закрытия затемненного фона при клике на затемненную область
+overlay.addEventListener("click", function() {
+  overlay.style.display = "none";
+});
 
 
 

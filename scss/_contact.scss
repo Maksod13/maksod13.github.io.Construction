@@ -1,8 +1,26 @@
-.contacts {
-    .interior__bgimg {
-        img {
-            background: linear-gradient(90deg, #F4F5F6 0%, rgba(244, 245, 246, 0.00) 41.15%);
-        }
+.interior.contacts {
+
+
+    .interior__bgimg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #F4F5F6 0%, rgba(244, 245, 246, 0.00) 41.15%);
+        z-index: 10;
+        /* Устанавливаем z-index больше, чем у изображения, чтобы градиент был сверху */
+    }
+
+
+
+    /* Добавьте следующий стиль, чтобы изображение полностью заполнило родительский блок */
+    .interior__bgimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
     }
 
 }
@@ -140,8 +158,9 @@
                     border-radius: 4px;
                     border: 1px solid var(--gray-400, #D7DADD);
                     background: var(--gray-200, #F4F5F6);
-                    color: var(--gray-800, #424551);
+                    color: var(--gray-800, hsl(228, 10%, 29%));
                     padding-left: 12px;
+
                     /* base/regular */
                     font-family: Ubuntu;
                     font-size: 16px;
@@ -487,11 +506,27 @@
 @media screen and (max-width: 650px) {
     .contactus .contactus__inner .inner__box--element {
         flex-direction: column;
-        width: 400px;
+        width: 100%;
+    }
+
+    .contactus .contactus__inner .inner__box--element .us__box--left input {
+        width: 100%;
+    }
+
+    .contactus .contactus__inner .inner__box--element .us__box--left label {
+        width: 100%;
+    }
+
+    .contactus .contactus__inner .inner__box--element .us__box--right .box__right {
+        width: 100%;
+    }
+
+    .contactus .contactus__inner .inner__box--element .us__box--right select {
+        width: 100%;
     }
 
     .contactus .contactus__inner .inner__box--element .us__box--left {
-        width: 400px;
+        width: 100%;
     }
 
 
@@ -513,12 +548,23 @@
 }
 
 @media screen and (max-width: 430px) {
+    .contacts {
+        min-height: auto;
+    }
+        .contactus{
+            margin-top: 50px;
+        }
+
     .interior .interior__container .interior__inner .interior__inner--element .interior__inner--headline .interior__headline--title {
         font-size: 40px;
     }
 
+    .interior .interior__container .interior__inner .interior__inner--element .interior__inner--headline .interior__headline--subtitle {
+        margin-top: 0;
+    }
+
     .contactus .contactus__inner .contact__ofices--item textarea {
-        width: 300px;
+        width: 100%;
     }
 
     .contactus .contactus__inner .checkbox__container {
